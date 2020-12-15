@@ -1,0 +1,18 @@
+Map task on 6th file ../pg-sherlock_holmes.txt complete
+panic: runtime error: index out of range
+
+goroutine 18 [running]:
+_/home/test/lab/6.824/src/mr.(*TaskStatQueue).TimeOutQueue(0xc42017a078, 0x9c0e80, 0x0, 0x0)
+        /home/test/lab/6.824/src/mr/master.go:137 +0x34c
+_/home/test/lab/6.824/src/mr.(*Master).collectOutOfTime(0xc42017a000)
+        /home/test/lab/6.824/src/mr/master.go:362 +0x64
+created by _/home/test/lab/6.824/src/mr.MakeMaster
+        /home/test/lab/6.824/src/mr/master.go:347 +0x3cc
+2020/12/09 17:15:00 dialing:dial unix /var/tmp/824-mr-1000: connect: connection refused
+2020/12/09 17:15:03 dialing:dial unix /var/tmp/824-mr-1000: connect: connection refused
+2020/12/09 17:15:04 dialing:dial unix /var/tmp/824-mr-1000: connect: connection refused
+sort: cannot read: 'mr-out*': No such file or directory
+cmp: EOF on mr-crash-all which is empty
+--- crash output is not the same as mr-correct-crash.txt
+--- crash test: FAIL
+*** FAILED SOME TESTS
